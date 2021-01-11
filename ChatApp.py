@@ -80,6 +80,10 @@ def greeting():
                      +"\n"+'https://www.gov.za/issues/government-and-opportunities-youth'
                      +"\n Vacation Work \n"+'https://www.rent-a-student.co.za/'
                      +"\n"+'https://www.graduates24.com/vacationwork')
+        
+        
+         if not responded:
+        msg.body('Sorry, Please re-enter your choice')
     return str(resp)
 
    #--------------------------------------------------------------------------------------------------------------------------------------------------------
