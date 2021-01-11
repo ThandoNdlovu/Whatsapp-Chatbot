@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello, World"
+    return "Hello, World...app is working fine."
 
 @app.route('/bot', methods=['POST'])
 
@@ -18,7 +18,7 @@ def greeting():
     msg = resp.message()
 
    #--------------------------------------------------------------------------------------------------------------------------------------------------------
-    if 'hey' or 'hi' or 'hy' or 'hello' or 'halo' in incoming_msg:
+    if 'hey' or 'hi' or 'hy' or 'hello' or 'halo' or 'Hey' or 'Hi' or 'Hy' or 'Hello' or 'Halo' in incoming_msg:
         # it will return the greeting message prompted  
         msg.body("Hello :) Welcome to Re-invent Students \n ")
         msg.body("Please select one of the following: \n 1) Educational \n 2) Events \n 3) Skills & Platforms \n 4) Opportunuties")
